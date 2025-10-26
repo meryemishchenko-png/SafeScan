@@ -1,0 +1,17 @@
+# TalentCup-2025 SafeScan
+
+## Proje Hakkında
+SafeScan, bilgisayardaki potansiyel zararlı dosyaları tespit eden basit bir sistemdir.
+Program:
+- Dosya uzantılarını kontrol eder
+- Bilinen zararlı hash'leri tarar
+- Şüpheli içerikleri arar (eval, base64, powershell)
+- Şüpheli dosyaları karantinaya taşır
+- JSON formatında rapor oluşturur
+
+## Kurulum
+Python 3 yüklü olmalı. Projeyi herhangi bir klasöre kopyalayın.
+
+## Çalıştırma
+`bash
+python safe_scan.py --path ./test_folder --quarantine ./karantina --report rapor.json --verbose
